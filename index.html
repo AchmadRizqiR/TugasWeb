@@ -1,0 +1,359 @@
+<html>
+	<title>Genshin Impact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/w3.css">
+	<body style="background-color: black;">
+		<div class="w3-bar">
+			<center>
+			    <img src="css/banner.jpeg" style="width: 100%; margin-left: 0; margin-right: 0;">
+			</center>
+		</div>
+		<div class="w3-bar w3-black">
+			<button class="w3-bar-item w3-button" onclick="openContent('Beranda')" style="font-weight: bold;">Beranda</button>
+            <button class="w3-bar-item w3-button" onclick="openContent('Story')" style="font-weight: bold;">Backstory</button>
+			<button class="w3-bar-item w3-button" onclick="openContent('Karakter')" style="font-weight: bold;">Karakter Utama</button>
+			<button class="w3-bar-item w3-button" onclick="openContent('Dunia')" style="font-weight: bold;">Dunia</button>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button" style="font-weight: bold;">Mekanisme</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="openContent('Elemen')">Elemen
+                    <button class="w3-bar-item w3-button" onclick="openContent('Stamina')">Stamina
+                    <button class="w3-bar-item w3-button" onclick="openContent('Puzzle')">Puzzle
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button" style="font-weight: bold;">Wilayah</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="openContent('Monstadt')">Monstadt
+                    <button class="w3-bar-item w3-button" onclick="openContent('Liyue')">Liyue
+                    <button class="w3-bar-item w3-button" onclick="openContent('Inazuma')">Inazuma
+                    <button class="w3-bar-item w3-button" onclick="openContent('Sumeru')">Sumeru
+                    <button class="w3-bar-item w3-button" onclick="openContent('Fontaine')">Fontaine
+                    <button class="w3-bar-item w3-button" onclick="openContent('Natlan')">Natlan
+                    <button class="w3-bar-item w3-button" onclick="openContent('Snezhnaya')">Snezhnaya
+                </div>
+            </div>
+            <button class="w3-bar-item w3-button w3-right" onclick="openContent('About')" style="font-weight: bold;">About Me</button>
+		</div>
+        <div class="w3-container w3-black" style="height: auto; background-image: url('css/bg.jpg'); background-size: cover; background-repeat: no-repeat;">
+            <div id='Beranda' class="w3-container konten w3-animate-zoom" style="display: block; height: 100%;">
+                <center>
+                    <br><br><br><br>
+                    <h1>Selamat Datang !</h1>
+                    <h2>Silahkan Pilih Menu Yang Tersedia Untuk Mulai Menjelajah</h2>
+                </center>
+            </div>
+            <div id="About" class="w3-container konten w3-animate-bottom" style="display:none">
+                <center>
+                    <h1 style="font-weight: bold;">About Me</h1>
+                    <hr>
+                    <img src="css/me.jpg" width="20%">
+                    <br>
+                    <table style="color: white;">
+                        <tr>
+                            <td>Nama</td><td>:</td><td>Achmad Rizqi Ramadhan</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas</td><td>:</td><td>IF-5</td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td><td>:</td><td>10123187</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    <br>
+                </center>
+            </div>
+            <div id="Story" class="w3-container konten w3-animate-bottom" style="display:none">
+                <center>
+                    <h1 style="font-weight: bold;">Latar Belakang</h1>
+                    <hr>
+                    <img src="css/genshin-impact-khaenri-ah.jpg" style="width: 60%;">
+                </center>
+                <div class="w3-container" style="margin: auto; width: 70%;">
+                    <p> 
+                        Aether dan Lumine tiba di Teyvat, namun karena alasan yang tidak diketahui, mereka tidak bangun dan tetap tertidur untuk waktu yang tidak ditentukan.
+                        Saudara kandung sang Traveler akhirnya berhasil membangunkan mereka dan mengatakan bahwa mereka harus pergi, dengan kedua saudara kembar tersebut menyaksikan kehancuran Khaenri'ah. 
+                        Namun, Dewa Tak Dikenal, yang mendeskripsikan dirinya sebagai Penopang Prinsip-prinsip Surgawi, menghalangi jalan mereka. 
+                        Pertarungan pun terjadi dan mengakibatkan salah satu dari si kembar termakan oleh batu merah dari Dewa Tak Dikenal, dan yang lainnya terperangkap dalam segel yang menyebabkan mereka kehilangan kekuatannya. 
+                        Lima ratus tahun kemudian, sang Traveler terbangun, terpisah dari saudara mereka, dan terdampar. Suatu hari mereka secara tidak sengaja memancing Paimon dari laut, menyelamatkannya dari tenggelam.
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id="Karakter" class="w3-container konten w3-animate-left" style="display:none">
+                <center>
+                    <h1 style="font-weight: bold;">Karakter Utama</h1>
+                    <hr>
+                    <img src="css/Traveler.jpg" width="40%">
+                </center>
+                <div class="w3-container" style="margin: auto; width: 70%;">
+                    <p>
+                        The Traveler adalah protagonis yang dapat dimainkan di Genshin Impact. Dalam cutscene pembuka, saudara kembar dari dunia lain melakukan perjalanan melintasi alam semesta, hingga dewa yang tidak dikenal menghalangi jalan mereka. 
+                        Pemain dapat memilih Aether (pria) atau Lumine (wanita) sebagai Traveler dan saudaranya  akan ditangkap. Kekuatan mereka untuk melakukan perjalanan disegel, membuat mereka terdampar di Teyvat. 
+                        Mereka menyelamatkan Paimon dengan memancingnya keluar dari air dan dia menemani mereka sebagai teman perjalanan baru mereka. Bersama-sama mereka memulai perjalanan untuk menemukan "The Seven" 
+                        dan bersatu kembali dengan saudara mereka yang hilang.
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id="Dunia" class="w3-container konten w3-animate-left" style="display:none">
+                <center>
+                    <h1 style="font-weight: bold;">Teyvat</h1>
+                    <hr>
+                    <img src="css/teyvat.jpg" width="25%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%;">
+                    <p>
+                        Teyvat adalah tempat atau latar berjalannya game genshin impact. Teyvat merupakan dunia dimana para dewa hidup berdampingan dengan manusia. 
+                        Tujuh dewa yang disebut dengan Archon dalam game ini menjadi pemimpin dari tujuh negeri besar yang ada di Teyvat.
+                        Ketujuh negeri tersebut adalah Monstadt, Liyue, Inazuma, Sumeru, Fontaine, Natlan dan Snezhnaya. Dalam dunia ini
+                        sang Traveler berkelana untuk mencari saudaranya yang hilang dan juga mencari informasi tentang Dewa Tak Dikenal dari ketujuh archon (The Seven).
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id='Elemen' class="w3-container konten w3-animate-bottom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Elemen</h1>
+                    <hr>
+                    <img src="css/element.jpg" width="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Terdapat tujuh elemen yang menaungi tujuh kawasan di Teyvat. 
+                        Ketujuh elemen tersebut sangat penting karena setiap karakter akan memiliki satu elemen berbeda. 
+                        Setiap elemen memiliki ciri khas serta kekurangan dan kelebihannya masing-masing.
+                        Ketujuh elemen tersebut adalah Pyro(Api), Hydro(Air), Anemo(Angin), Dendro(Daun), Electro(Petir), Cryo(Es), Geo(Tanah).
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id='Stamina' class="w3-container konten w3-animate-bottom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Stamina</h1>
+                    <hr>
+                    <img src="css/stamina.jpg" height="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Stamina adalah atribut yang digunakan dalam berbagai teknik pertarungan dan gerakan seperti 
+                        Berlari Cepat (atau Menghindar), Memanjat, Berenang, Meluncur, dan Charge Attack. 
+                        Pengukur Stamina ditampilkan sebagai bilah kuning di sebelah kanan karakter saat kehabisan atau mengisi ulang, 
+                        dan secara otomatis akan menyembunyikan dirinya sendiri saat terisi penuh. 
+                        Pemain dapat meningkatkan level pengukur Stamina mereka menggunakan Patung Tujuh di Mondstadt dan Liyue.
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id='Puzzle' class="w3-container konten w3-animate-bottom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Puzzle</h1>
+                    <hr>
+                    <img src="css/puzzle.jpg" height="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Di Teyvat, traveller dapat menemukan berbagai macam teka-teki yang jika diselesaikan
+                        akan memberikan hadiah. Hadiah tersebut dapat berupa in game item, Mora, dan Primogem.
+                        Primogem adalah mata uang premium dalam genshin impact, primogem dapat digunakan untuk
+                        mendapatkan karakter ataupun senjata. Jadi, traveller di rekomendasikan untuk menyelesaikan setiap
+                        puzzle yang dilalui.
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+            
+            <div id='Monstadt' class="w3-container konten w3-animate-zoom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Monstadt</h1>
+                    <hr>
+                    <img src="css/mondstadt.jpg" height="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Mondstadt - Kota Kebebasan adalah kota pertama yang didatangi oleh traveller di dunia Teyvat. 
+                        Kota ini diperintah oleh Lord Barbatos, sang Anemo Archon. Namun, kehadiran Barbatos jarang terasa 
+                        di antara orang-orang Mondstadt karena dia menolak untuk memerintah rakyatnya secara langsung. 
+                        Meskipun mungkin aneh bagi mereka yang berasal dari negara lain, hal ini sesuai dengan cita-cita kebebasan di wilayah ini. 
+                        Mondstadt di Genshin Impact terinspirasi oleh negara Jerman di dunia nyata.
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id='Liyue' class="w3-container konten w3-animate-zoom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Liyue</h1>
+                    <hr>
+                    <img src="css/liyue.jpg" height="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Liyue - Liyue menghargai kesucian kontrak di atas segalanya. Oleh karena itu, 
+                        orang-orang berkumpul setiap tahun selama Ritus Penurunan untuk mendengarkan bimbingan 
+                        Geo Archon mereka, Morax. Sebagai salah satu Archon tertua, Morax adalah dewa yang bijaksana, 
+                        yang memberikan nasihat untuk memastikan perdagangan yang makmur. Namun, seperti yang 
+                        diungkapkan oleh Genshin Impact Archon Quest, dia mulai bosan dengan perannya yang menonjol. 
+                        Liyue didasarkan pada dunia nyata Tiongkok.
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id='Inazuma' class="w3-container konten w3-animate-zoom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Inazuma</h1>
+                    <hr>
+                    <img src="css/inazuma.jpg" height="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Inazuma - Inazuma adalah Tanah Keabadian dan wilayah paling tidak bersahabat yang 
+                        pernah ditemui para traveller sejauh ini. Dipimpin oleh Electro Archon yang kejam, 
+                        Raiden Ei, penduduk setempat menghadapi risiko kehilangan Vision karena Keputusan 
+                        Perburuan Vision. Mengambil Vision ini akan membawa Inazuma selangkah lebih dekat 
+                        menuju keabadian. Inazuma mengambil inspirasi dari dunia nyata Jepang.
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id='Sumeru' class="w3-container konten w3-animate-zoom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Sumeru</h1>
+                    <hr>
+                    <img src="css/sumeru.jpg" height="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Sumeru - Kota para cendekiawan yang terletak di bagian barat-tengah Teyvat. 
+                        Sebuah negara yang fantastis dengan hutan hujan yang rimbun dan gurun yang tandus, 
+                        di mana banyak sekali buah kebijaksanaan yang tumbuh dan terkubur. 
+                        Baik para pengembara yang melakukan perjalanan dari jauh melalui hutan untuk mencapai 
+                        kota akademi atau menyelami padang pasir untuk menemukan reruntuhan bersejarah gurun merah, 
+                        banyak pengetahuan berharga yang menanti mereka di sini. 
+                        Sumeru adalah bangsa yang menyembah Dewa Kusanali, Dendro Archon dan Dewa Kebijaksanaan. 
+                        Wilayah ini terkenal sebagai pusat pembelajaran Teyvat dan menjadi tempat berdirinya Sumeru 
+                        Akademiya. Sumeru dilaporkan didasarkan pada wilayah SWANA di dunia nyata.
+                    </p>
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id='Fontaine' class="w3-container konten w3-animate-zoom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Fontaine</h1>
+                    <hr>
+                    <img src="css/fontaine.jpg" height="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Fontaine - adalah salah satu dari tujuh wilayah di Teyvat. 
+                        Merupakan bangsa yang menyembah Focalors, Hydro Archon dan Dewa Keadilan.
+                        Di fontaine traveller dapat menyelam ke dalam lautan yang luas, seluruh negeri fontaine dikelilingi oleh lautan yang luas.
+                        Kemudian, terdapat 2 elemen/fitur baru yaitu Pneuma dan Ousia. Dengan 2 fitur tersebut menambah
+                        taktik dalam pertempuran sehingga lebih menarik.
+                    </p>   
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id='Natlan' class="w3-container konten w3-animate-zoom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Natlan</h1>
+                    <hr>
+                    <img src="css/natlan.jpg" height="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Natlan - adalah salah satu wilayah utama yang dijadwalkan untuk diperkenalkan ke Genshin Impact. 
+                        Natlan adalah tanah yang dicirikan oleh elemen Pyro, yang diperintah oleh Murata, Pyro Archon. 
+                        Sering disebut sebagai Lady of Fire dan Dewa Perang, Murata mewujudkan semangat Natlan yang 
+                        berapi-api. Budaya Natlan berkisar pada perang dan semangat, seperti yang terlihat dari 
+                        karakter pemarah dan lanskap vulkaniknya. Inspirasi visual dan budaya untuk Natlan diambil 
+                        dari perpaduan budaya Pribumi Amerika, Spanyol, dan Afrika Barat. 
+                        Estetika negeri ini diyakini mencakup elemen-elemen dari beragam budaya ini, 
+                        menciptakan pengalaman yang unik dan imersif bagi para pemain. Hal ini terlihat jelas dalam 
+                        detail seperti kehadiran musik gitar dan alat musik di Teyvat Storyline Preview dan referensi 
+                        sumber air panas yang memiliki kekuatan penyembuhan.
+                    </p>      
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+
+            <div id='Snezhnaya' class="w3-container konten w3-animate-zoom" style="display: none; height: 100%;">
+                <center>
+                    <h1 style="font-weight: bold;">Snezhnaya</h1>
+                    <hr>
+                    <img src="css/snezhnaya.jpg" height="40%">
+                </center>
+                <div class="item" style="margin: auto; width: 70%";>
+                    <p>
+                        Snezhnaya - adalah salah satu dari tujuh wilayah di Teyvat. Ini adalah bangsa yang menyembah Tsaritsa, 
+                        sang Cryo Archon. Suku Fatui, pasukan militer yang berada di bawah kendalinya, 
+                        sangat terkenal karena pengabdian mereka yang fanatik dan cara-cara mereka yang 
+                        tak bermoral dalam melaksanakan kehendaknya. Snezhnaya dilaporkan merupakan perpaduan
+                        pengaruh dari Rusia dan Italia.
+                    </p>     
+                    <br>
+                    <center>
+                        <button class="w3-white w3-button w3-round-xxlarge" onclick="openContent('Beranda')" style="font-weight: bold;">Kembali Ke Beranda</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+		<script> 
+		function openContent(content) {
+			var i;
+			var x = document.getElementsByClassName("konten");
+			for (i = 0; i < x.length; i++) {
+			    x[i].style.display = "none";
+			}
+			document.getElementById(content).style.display = "block";
+		}
+		</script>
+	</body>
+</html>
